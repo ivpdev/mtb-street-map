@@ -4,7 +4,7 @@ var SpotsService = require('../services/SpotsService');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.send(SpotsService.getAll());
+   SpotsService.getAll().then((spots) => res.send(spots))
 });
 
 module.exports = router;

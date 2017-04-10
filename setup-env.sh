@@ -1,0 +1,1 @@
+export MONGO_URL=mongodb://admin:mT8mapp@ds151060.mlab.com:51060/mtb-street-map
