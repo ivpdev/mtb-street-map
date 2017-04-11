@@ -9,6 +9,7 @@
 
 <h1>MTB Street Map</h1>
 <div id="map"></div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script>
       function initMap() {
         var telekom = {lat: 48.132629, lng: 11.614861};
@@ -20,27 +21,42 @@
           center: munich
         });
 
-        var contentString = '<div id="content">'+
-            '<div id="siteNotice">'+
-            '</div>'+
-            '<h1 id="firstHeading" class="firstHeading">Skinny bench</h1>'+
-            '<div id="bodyContent">'+
-            '<p>Relatively easy skinny (broad, not high from the ground)</p>'+
-            '</div>'+
-            '</div>';
+        $.ajax('spots').then(function(spots) {
+                    spots.map(function(spot) {
+                            var contentString = '<div id="content">'+
+                                '<div id="siteNotice">'+
+                                '</div>'+
+                                '<h1 id="firstHeading" class="firstHeading">' + spot.title + '</h1>'+
+                                '<div id="bodyContent">'+
+                                '<p>' + spot.description + '</p>'+
+                                //'<iframe width="560" height="315" src="https://www.youtube.com/embed/0GtArVAawng" frameborder="0" allowfullscreen></iframe>' +
+                                '</div>'+
+                                '</div>';
 
-        var infowindow = new google.maps.InfoWindow({
-          content: contentString
-        });
+                             var infowindow = new google.maps.InfoWindow({
+                                      content: contentString
+                                    });
 
-        var marker = new google.maps.Marker({
-          position: telekom,
-          map: map,
-          title: 'Skinny bench'
-        });
-        marker.addListener('click', function() {
-          infowindow.open(map, marker);
-        });
+                              var marker = new google.maps.Marker({
+                                position: spot.position,
+                                map: map,
+                                title: spot.title
+                              });
+
+                              marker.addListener('click', function() {
+                                infowindow.open(map, marker);
+                              });
+
+                    }
+                    );
+                 });
+
+
+
+
+
+
+
 
 
       }
