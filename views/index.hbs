@@ -5,65 +5,19 @@
         width: 100%;
        }
     </style>
+    <link rel="stylesheet" href="slider-pro/css/slider-pro.min.css"/>
 </head>
 
 <h1>MTB Street Map</h1>
 <div id="map"></div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script>
-      function initMap() {
-        var telekom = {lat: 48.132629, lng: 11.614861};
-        var munich = {lat: 48.1548256, lng: 11.4017521}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
 
+    <script src="slider-pro/js/jquery.sliderPro.min.js"></script>
 
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 11,
-          center: munich
-        });
-
-        $.ajax('spots').then(function(spots) {
-                    spots.map(function(spot) {
-                            var contentString = '<div id="content">'+
-                                '<div id="siteNotice">'+
-                                '</div>'+
-                                '<h1 id="firstHeading" class="firstHeading">' + spot.title + '</h1>'+
-                                '<div id="bodyContent">'+
-                                '<p>' + spot.description + '</p>'+
-                                //'<iframe width="560" height="315" src="https://www.youtube.com/embed/0GtArVAawng" frameborder="0" allowfullscreen></iframe>' +
-                                '</div>'+
-                                '</div>';
-
-                             var infowindow = new google.maps.InfoWindow({
-                                      content: contentString
-                                    });
-
-                              var marker = new google.maps.Marker({
-                                position: spot.position,
-                                map: map,
-                                title: spot.title
-                              });
-
-                              marker.addListener('click', function() {
-                                infowindow.open(map, marker);
-                              });
-
-                    }
-                    );
-                 });
-
-
-
-
-
-
-
-
-
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7KYb7KwOqPC-kSF5bCP2--abf-QXTCCA&callback=initMap">
-    </script>
+    <script src="js/init-map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7KYb7KwOqPC-kSF5bCP2--abf-QXTCCA&callback=initMap"></script>
 
 <!-- iframe
   width="600"

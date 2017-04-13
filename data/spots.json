@@ -1,0 +1,16 @@
+{
+  "spots": [{
+    "title": "Skinny bench",
+    "description": "Relatively easy skinny (broad, not high from the ground)",
+    "position": { "lat": 48.132629, "lng": 11.614861 },
+    "images": [
+      "http://www.freewheelingfrance.com/images%20for%20stories/MTB-French-Alps.jpg",
+      "https://eventility.files.wordpress.com/2013/11/adp5209.jpg",
+      "http://www.vivax-assist.com/__we_thumbs__/2626_12_Vivax_Shooting_07_2016_18_farbe.jpg"
+    ]
+  }, {
+    "title": "Hill in Ostpark",
+    "description": "Nice spot for short uphill and downhill",
+    "position": { "lat": 48.113305, "lng": 11.639568 }
+  }]
+}

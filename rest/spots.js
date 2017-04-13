@@ -1,6 +1,6 @@
 var express = require('express');
+var SpotsService = require('../services/spots/SpotsService');
 var router = express.Router();
-var SpotsService = require('../services/SpotsService');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
