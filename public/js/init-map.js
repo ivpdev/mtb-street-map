@@ -13,7 +13,7 @@ Handlebars.registerPartial('imagesSlider', `
 Handlebars.registerPartial('videos',`
         {{#each videos}}
             <iframe width="336" height="189"
-                src="https://www.youtube.com/embed/gyLMVySui6k" frameborder="0" allowfullscreen></iframe>
+                src="{{url}}" frameborder="0" allowfullscreen></iframe>
         {{/each}}` )
 
 var spotDetailsTemplate = Handlebars.compile(`
