@@ -3,12 +3,18 @@ Handlebars.registerPartial('imagesSlider', `
         <div class="sp-slides">
             {{#each images}}
                 <div class="sp-slide">
-                    <img class="sp-image" src="{{src}}"/>
+                    <img class="sp-image" src="{{url}}"/>
                 </div>
             {{/each}}
         </div>
     </div>
 `);
+
+Handlebars.registerPartial('videos',`
+        {{#each videos}}
+            <iframe width="336" height="189"
+                src="https://www.youtube.com/embed/gyLMVySui6k" frameborder="0" allowfullscreen></iframe>
+        {{/each}}` )
 
 var spotDetailsTemplate = Handlebars.compile(`
     <div id="content">
@@ -20,7 +26,7 @@ var spotDetailsTemplate = Handlebars.compile(`
                  {{> imagesSlider}}
              {{/if}}
              {{#if videos}}
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/0GtArVAawng" frameborder="0" allowfullscreen></iframe>
+                  {{> videos}}
              {{/if}}
         </div>
     </div>`);
@@ -38,7 +44,8 @@ function initMap() {
             var spotDetails = spotDetailsTemplate({
                 title: spot.title,
                 description: spot.description,
-                images: _.map(spot.images, (src) => { return { src: src }; })
+                images: _.map(spot.images, (url) => { return { url: url }; }),
+                videos: _.map(spot.videos, (url) => { return { url: url }; })
             });
 
              var infowindow = new google.maps.InfoWindow({
