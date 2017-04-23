@@ -9,7 +9,10 @@
   }, {
     "title": "Hill in Ostpark",
     "description": "Nice spot for short uphill and downhill",
-    "position": { "lat": 48.113305, "lng": 11.639568 }
+    "position": { "lat": 48.113305, "lng": 11.639568 },
+    "videos": [
+      "https://www.youtube.com/embed/1FDuJuqjclg"
+    ]
   }, {
     "title": "Skinny",
     "description": "Short skinny. Possible to roll down without dropping",
