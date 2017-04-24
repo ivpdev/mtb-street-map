@@ -13,6 +13,21 @@
     "videos": [
       "https://www.youtube.com/embed/1FDuJuqjclg"
     ]
+  },  {
+    "title": "Short XC trail",
+    "position": {
+        "lat": 48.116190,
+        "lng": 11.631112
+    },
+    "videos": [
+        "https://www.youtube.com/embed/AAByP9IgnGo"
+    ]
+  },  {
+    "title": "Skatepark",
+    "position": {
+        "lat": 48.115508,
+        "lng": 11.634387
+    }
   }, {
     "title": "Skinny",
     "description": "Short skinny. Possible to roll down without dropping",
