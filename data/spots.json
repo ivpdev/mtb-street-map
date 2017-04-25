@@ -53,6 +53,10 @@
     "position": {
         "lat": 48.152513,
         "lng": 11.558452
-    }
+    },
+    "images": [
+      "http://i.imgur.com/El7Wmko.jpg",
+      "http://i.imgur.com/7uDxdUs.jpg"
+    ]
   }]
 }
