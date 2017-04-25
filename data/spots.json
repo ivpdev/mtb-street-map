@@ -50,6 +50,7 @@
     }
   }, {
     "title": "Skatepark",
+    "description": "Nice skatepark to train jumps",
     "position": {
         "lat": 48.152513,
         "lng": 11.558452
