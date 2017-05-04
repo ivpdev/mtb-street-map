@@ -60,5 +60,14 @@
       "http://i.imgur.com/El7Wmko.jpg",
       "http://i.imgur.com/7uDxdUs.jpg"
     ]
+  }, {
+    "title": "Skinny",
+    "position": {
+        "lat": 48.101992,
+        "lng": 11.641155
+    },
+    "images": [
+      "http://i.imgur.com/e40QJse.jpg"
+    ]
   }]
 }
