@@ -69,5 +69,14 @@
     "images": [
       "http://i.imgur.com/e40QJse.jpg"
     ]
+  }, {
+    "title": "Drop",
+    "position": {
+        "lat": 48.102187,
+        "lng": 11.640903
+    },
+    "images": [
+      "http://i.imgur.com/1nzidic.jpg"
+    ]
   }]
 }
