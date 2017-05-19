@@ -80,5 +80,17 @@
     "images": [
       "http://i.imgur.com/1nzidic.jpg"
     ]
+  }, {
+    "title": "Pumptrack Giesing",
+    "description": "------------------------------------------------",
+    "position": {
+        "lat": 48.106295,
+        "lng": 11.5820679
+    },
+    "images": [
+      "http://i.imgur.com/I0Ahpxu.jpg",
+      "http://i.imgur.com/66Uldst.jpg",
+      "http://i.imgur.com/R5gIDrC.jpg"
+    ]
   }]
 }
