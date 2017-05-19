@@ -14,7 +14,7 @@
       "https://www.youtube.com/embed/1FDuJuqjclg"
     ]
   },  {
-    "title": "Short XC trail",
+    "title": "Short XC singletrail",
     "position": {
         "lat": 48.116190,
         "lng": 11.631112
@@ -43,10 +43,42 @@
         "https://www.youtube.com/embed/gyLMVySui6k"
     ]
   }, {
-    "title": "Natural Half-Pipe",
+    "title": "Ravine",
+    "description": "Small ravine with some possibilities to train jumps",
     "position": {
         "lat": 48.122134,
         "lng": 11.633619
     }
+  }, {
+    "title": "Skatepark",
+    "description": "Nice skatepark to train jumps",
+    "position": {
+        "lat": 48.152513,
+        "lng": 11.558452
+    },
+    "images": [
+      "http://i.imgur.com/El7Wmko.jpg",
+      "http://i.imgur.com/7uDxdUs.jpg"
+    ]
+  }, {
+    "title": "Skinny",
+    "description": "------------------------------------------------",
+    "position": {
+        "lat": 48.101992,
+        "lng": 11.641155
+    },
+    "images": [
+      "http://i.imgur.com/e40QJse.jpg"
+    ]
+  }, {
+    "title": "Drop",
+    "description": "------------------------------------------------",
+    "position": {
+        "lat": 48.102187,
+        "lng": 11.640903
+    },
+    "images": [
+      "http://i.imgur.com/1nzidic.jpg"
+    ]
   }]
 }
