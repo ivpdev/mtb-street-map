@@ -1,5 +1,6 @@
 body {
   padding: 30px;
+  padding-top: 3px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -8,5 +9,5 @@ a {
 }
 
 .fb-like {
-    margin-top: 5px;
+    float: right;
 }
